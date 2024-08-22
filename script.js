@@ -101,20 +101,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
           if (number < 10) {
 
-              words += units[number]; // units[4]
+              words += units[number];
 
               console.log(number);
 
           }
           else if (number < 20) {
-             words += teens[number - 10]; // teens[5]
+             words += teens[number - 10];
              console.log(number - 10);
              console.log(number);
              console.log("-----" + words);
           } 
 
           else {
-              words += tens[Math.floor(number / 10)];  //  40 / 10 = 4
+              words += tens[Math.floor(number / 10)];
               console.log(Math.floor(number / 10));
               console.log(number);
               console.log("Elsei " + words);
@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 console.log("__________________");  
                 console.log(number);
 
-                words += ' ' + units[number % 10]; // units[5]
+                words += ' ' + units[number % 10];
 
                 console.log(number % 10);
                 console.log(number);
@@ -138,10 +138,6 @@ document.addEventListener('DOMContentLoaded', () => {
   
       return words.trim();
     }
- 
-
-
-
 
     cashInputs.forEach(input => {
         input.addEventListener('input', () => {
@@ -152,7 +148,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       });
     
-
       // cashTexts.forEach(text => {
       //   text.addEventListener('input', () => {
       //     const value = parseInt(text.textContent, 10);
@@ -162,6 +157,4 @@ document.addEventListener('DOMContentLoaded', () => {
       //   });
       // });
 
-
   });
-  
