@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const txt5 = document.getElementById('txt5');
     const txt2 = document.getElementById('txt2');
     const txt1 = document.getElementById('txt1');
-    // Get references to other result elements
   
     const txtFinalCash = document.getElementById('txtFinalCash');
     const txtFinalCashInWords = document.getElementById('txtFinalCashInWords');
